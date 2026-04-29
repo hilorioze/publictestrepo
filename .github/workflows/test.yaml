@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: mxschmitt/action-tmate@v3
+        with:
+          limit-access-to-actor: true
