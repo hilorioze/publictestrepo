@@ -6,6 +6,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - run: ls -la ~/.ssh || true
+
       - uses: mxschmitt/action-tmate@v3
         with:
           limit-access-to-actor: true
+      
+      - run: ls -la ~/.ssh || true
